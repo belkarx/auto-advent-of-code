@@ -16,8 +16,8 @@ def authAndSave():
     driver = webdriver.Firefox()
     driver.get("https://adventofcode.com/2020/auth/github")
 
-    uname = "autoaoc"
-    passwd = "@utoa0C1"
+    uname = ""
+    passwd = ""
 
     driver.find_element_by_xpath("//*[@id=\"login_field\"]").send_keys(uname)
     driver.find_element_by_xpath("//*[@id=\"password\"]").send_keys(passwd)
